@@ -1,5 +1,5 @@
 # minimap-highlight-selected package
 
-A short description of your package.
+A minimap binding for the [highlight-selected package](https://github.com/richrace/highlight-selected).
 
-![A screenshot of your spankin' package](https://f.cloud.github.com/assets/69169/2290250/c35d867a-a017-11e3-86be-cd7c5bf3ff9b.gif)
+![Screenshot](https://raw.github.com/abe33/minimap-highlight-selected/blob/master/screenshot.png?raw=true)
