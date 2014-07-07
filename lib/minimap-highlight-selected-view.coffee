@@ -1,4 +1,4 @@
-{View, EditorView} = require 'atom'
+{View} = require 'atom'
 
 module.exports = ->
   highlightSelectedPackage = atom.packages.getLoadedPackage('highlight-selected')
@@ -39,5 +39,5 @@ module.exports = ->
         @detach()
 
     getMinimap: ->
-      if @editorView instanceof EditorView
+      if @editorView.hasClass('editor')
         return minimap.minimapForEditorView(@editorView)
