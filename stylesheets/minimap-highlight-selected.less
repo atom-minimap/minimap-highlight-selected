@@ -3,6 +3,7 @@
 // See https://github.com/atom/atom-dark-ui/blob/master/stylesheets/ui-variables.less
 // for a full listing of what's available.
 @import "ui-variables";
+@import "syntax-variables";
 
 .minimap {
   .highlight-selected {
@@ -18,6 +19,6 @@
     box-sizing: content-box;
     padding: 0 0px;
     margin: -1px 0 0 0;
-    background-color: fadeout(@text-color-highlight, 50%);
+    background-color: @syntax-result-marker-color-selected;
   }
 }
