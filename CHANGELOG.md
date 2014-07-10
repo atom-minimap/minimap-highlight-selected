@@ -1,3 +1,11 @@
+<a name="v0.3.0"></a>
+# v0.3.0 (2014-07-10)
+
+## :sparkles: Features
+
+- Implement using a syntax variable for highlights ([16af2f91](https://github.com/abe33/minimap-highlight-selected/commit/16af2f91373e30e35f1e7b77e2fd9ba2e424abb1), [#2](https://github.com/abe33/minimap-highlight-selected/issues/2))
+
+
 <a name="v0.2.0"></a>
 # v0.2.0 (2014-07-07)
 
