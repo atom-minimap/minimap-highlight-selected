@@ -21,7 +21,8 @@ module.exports = ->
 
       if minimapView?
         minimapView.miniOverlayer.append(this)
-        @adjustResults()
+        @css fontSize: minimapView.getLineHeight() + 'px'
+        # @adjustResults()
 
     detach: ->
       super
@@ -41,3 +42,10 @@ module.exports = ->
     getMinimap: ->
       if @editorView.hasClass('editor')
         return minimap.minimapForEditorView(@editorView)
+
+    handleSelection: =>
+      editorView = @editorView
+      @editorView = @getMinimap()
+      super
+
+      @editorView = editorView
