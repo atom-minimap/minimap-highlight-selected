@@ -1,3 +1,10 @@
+<a name="v1.0.0"></a>
+# v1.0.0 (2014-08-16)
+
+## :sparkles: Features
+
+- Implement support for the minimap position API ([36debca3](https://github.com/abe33/minimap-highlight-selected/commit/36debca3cb5356d739d0b05165c183e5d9c1aa5a))
+
 <a name="v0.3.0"></a>
 # v0.3.0 (2014-07-10)
 
