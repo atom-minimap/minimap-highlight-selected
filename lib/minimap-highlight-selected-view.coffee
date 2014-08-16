@@ -28,6 +28,10 @@ module.exports = ->
       super
       @unsubscribe @editorView, "selection:changed", @handleSelection
 
+    destroy: ->
+      @detach()
+      super
+
     adjustResults: ->
       @css '-webkit-transform', "scale3d(#{minimap.getCharWidthRatio()},1,1)"
 

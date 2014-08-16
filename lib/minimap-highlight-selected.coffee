@@ -50,6 +50,7 @@ class MinimapHighlightSelected
     @viewsSubscription = atom.workspaceView.eachEditorView (editorView) =>
       view = new @MinimapHighlightSelectedView editorView
       view.attach()
+      view.handleSelection()
       @views[editorView.editor.id] = view
 
   destroyViews: =>
