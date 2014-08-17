@@ -1,3 +1,10 @@
+<a name="v1.0.2"></a>
+# v1.0.2 (2014-08-17)
+
+## :bug: Bug Fixes
+
+- Fix broken plugin with highlight-selected@0.5.0 ([a96d2afb](https://github.com/abe33/minimap-highlight-selected/commit/a96d2afb3b82737be6d0edd8f56fe7b53ce5ee4f))
+
 <a name="v1.0.1"></a>
 # v1.0.1 (2014-08-17)
 
