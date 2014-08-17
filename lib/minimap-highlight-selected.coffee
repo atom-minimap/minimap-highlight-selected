@@ -47,11 +47,11 @@ class MinimapHighlightSelected
     return if @viewsCreated
 
     @viewsCreated = true
-    @viewsSubscription = atom.workspaceView.eachEditorView (editorView) =>
-      view = new @MinimapHighlightSelectedView editorView
-      view.attach()
-      view.handleSelection()
-      @views[editorView.editor.id] = view
+    @viewsSubscription = @minimap.eachMinimapView ({view}) =>
+      highlightView = new @MinimapHighlightSelectedView(view)
+      highlightView.attach()
+      highlightView.handleSelection()
+      @views[view.editor.id] = highlightView
 
   destroyViews: =>
     return unless @viewsCreated
