@@ -1,3 +1,10 @@
+<a name="v1.0.1"></a>
+# v1.0.1 (2014-08-17)
+
+## :bug: Bug Fixes
+
+- Fix toggling plugin doesn't remove or recreate views ([9a931710](https://github.com/abe33/minimap-highlight-selected/commit/9a931710b46842429785c604d8c03d2ea42ed36f))
+
 <a name="v1.0.0"></a>
 # v1.0.0 (2014-08-16)
 
