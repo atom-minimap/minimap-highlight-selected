@@ -5,21 +5,6 @@
 @import "ui-variables";
 @import "syntax-variables";
 
-.minimap {
-  .highlight-selected {
-    -webkit-transform-origin: top left;
-  }
-  .marker .region {
-    position: absolute;
-    pointer-events: none;
-  }
-
-  .highlight-selected .marker .region {
-    border-radius: 2px;
-    box-sizing: content-box;
-    padding: 0 0px;
-    margin: 0;
-    background-color: @syntax-result-marker-color-selected;
-    height: 1em !important;
-  }
+.minimap .highlight-selected {
+  background: @text-color-highlight;
 }

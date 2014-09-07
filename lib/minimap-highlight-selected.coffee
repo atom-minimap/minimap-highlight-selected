@@ -3,8 +3,6 @@
 class MinimapHighlightSelected
   Subscriber.includeInto(this)
 
-  views: {}
-
   activate: (state) ->
     @highlightSelectedPackage = atom.packages.getLoadedPackage('highlight-selected')
     @minimapPackage = atom.packages.getLoadedPackage('minimap')
@@ -47,18 +45,10 @@ class MinimapHighlightSelected
     return if @viewsCreated
 
     @viewsCreated = true
-    @viewsSubscription = @minimap.eachMinimapView ({view}) =>
-      highlightView = new @MinimapHighlightSelectedView(view)
-      highlightView.attach()
-      highlightView.handleSelection()
-      @views[view.editor.id] = highlightView
+    @view = new @MinimapHighlightSelectedView(@minimap)
 
   destroyViews: =>
     return unless @viewsCreated
-
-    @viewsSubscription.off()
-    @viewsCreated = false
-    view.destroy() for id,view of @views
-    @views = {}
+    @view.destroy()
 
 module.exports = new MinimapHighlightSelected
