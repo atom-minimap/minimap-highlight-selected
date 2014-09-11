@@ -11,5 +11,5 @@ module.exports = ->
   class MinimapHighlightSelectedView extends HighlightedAreaView
     constructor: (@minimap) ->
       super
-      
+
     getActiveEditor: -> @minimap.getActiveMinimap()

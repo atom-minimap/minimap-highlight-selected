@@ -26,10 +26,11 @@ class MinimapHighlightSelected
   isActive: -> @active
   activatePlugin: ->
     return if @active
+    return unless @minimap.active
 
     @active = true
 
-    @createViews() if @minimap.active
+    @createViews()
 
     @subscribe @minimap, 'activated', @createViews
     @subscribe @minimap, 'deactivated', @destroyViews
@@ -46,9 +47,12 @@ class MinimapHighlightSelected
 
     @viewsCreated = true
     @view = new @MinimapHighlightSelectedView(@minimap)
+    @view.handleSelection()
 
   destroyViews: =>
     return unless @viewsCreated
+    @viewsCreated = false
+    @view.removeMarkers()
     @view.destroy()
 
 module.exports = new MinimapHighlightSelected
