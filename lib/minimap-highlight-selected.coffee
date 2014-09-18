@@ -1,7 +1,8 @@
-{Subscriber} = require 'emissary'
+{CompositeDisposable} = require 'event-kit'
 
 class MinimapHighlightSelected
-  Subscriber.includeInto(this)
+  constructor: ->
+    @subscriptions = new CompositeDisposable
 
   activate: (state) ->
     @highlightSelectedPackage = atom.packages.getLoadedPackage('highlight-selected')
@@ -32,15 +33,15 @@ class MinimapHighlightSelected
 
     @createViews()
 
-    @subscribe @minimap, 'activated', @createViews
-    @subscribe @minimap, 'deactivated', @destroyViews
+    @subscriptions.add @minimap.onDidActivate @createViews
+    @subscriptions.add @minimap.onDidDeactivate @destroyViews
 
   deactivatePlugin: ->
     return unless @active
 
     @active = false
     @destroyViews()
-    @unsubscribe()
+    @subscriptions.dispose()
 
   createViews: =>
     return if @viewsCreated
