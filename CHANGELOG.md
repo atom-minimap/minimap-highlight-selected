@@ -1,3 +1,16 @@
+<a name="v3.0.0"></a>
+# v3.0.0 (2014-09-19)
+
+## :sparkles: Features
+
+- Add version test for minimap v3 ([49ed7f84](https://github.com/abe33/minimap-highlight-selected/commit/49ed7f84e1319bcfb9504fb9d63436bee0d7241b))
+- Implement support for new minimap decoration API ([a31a2d50](https://github.com/abe33/minimap-highlight-selected/commit/a31a2d509c5e2899a40fff8c8bffd6c50feebe2c))
+
+## :bug: Bug Fixes
+
+- Fix deprecated minimap methods calls ([d63a773d](https://github.com/abe33/minimap-highlight-selected/commit/d63a773d0de54809721bedc31be81c33a64ae831))
+- Fix plugin not destroying/recreating markers on activation ([96bc3af0](https://github.com/abe33/minimap-highlight-selected/commit/96bc3af0c20bebeef94eb708cb65fa00a0fc4666))
+
 <a name="v1.0.2"></a>
 # v1.0.2 (2014-08-17)
 
