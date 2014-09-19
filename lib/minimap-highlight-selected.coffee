@@ -15,6 +15,8 @@ class MinimapHighlightSelected
     @minimap = require @minimapPackage.path
     @highlightSelected = require @highlightSelectedPackage.path
 
+    return @deactivate() unless @minimap.versionMatch('3.x')
+
     @minimap.registerPlugin 'highlight-selected', this
 
   deactivate: ->
