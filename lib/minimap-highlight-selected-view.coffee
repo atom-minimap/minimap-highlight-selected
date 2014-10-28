@@ -1,10 +1,8 @@
 {View} = require 'atom'
 
-module.exports = ->
+module.exports = () ->
   highlightSelectedPackage = atom.packages.getLoadedPackage('highlight-selected')
-  minimapPackage = atom.packages.getLoadedPackage('minimap')
-
-  minimap = require (minimapPackage.path)
+  
   highlightSelected = require (highlightSelectedPackage.path)
   HighlightedAreaView = require (highlightSelectedPackage.path + '/lib/highlighted-area-view')
 
