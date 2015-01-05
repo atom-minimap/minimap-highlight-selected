@@ -9,7 +9,7 @@ class MinimapHighlightSelected
   activate: (state) ->
     requirePackages('minimap', 'highlight-selected')
     .then ([@minimap, @highlightSelected]) =>
-      return @deactivate() unless @minimap.versionMatch('3.x')
+      return @deactivate() unless @minimap.versionMatch('>= 3.0.0')
 
       MinimapHighlightSelectedView = require('./minimap-highlight-selected-view')()
 
@@ -25,7 +25,6 @@ class MinimapHighlightSelected
   isActive: -> @active
   activatePlugin: ->
     return if @active
-    return unless @minimap.active
 
     @active = true
 
