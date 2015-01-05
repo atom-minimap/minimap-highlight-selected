@@ -11,7 +11,7 @@ module.exports = ->
 
     getActiveMinimap: -> @minimap.getActiveMinimap()
 
-    getActiveTextEditor: -> @getActiveMinimap().getTextEditor()
+    getActiveTextEditor: -> @getActiveMinimap()?.getTextEditor()
 
     ['markBufferRange', 'scanInBufferRange', 'getEofBufferPosition', 'getSelections', 'getLastSelection', 'bufferRangeForBufferRow', 'getTextInBufferRange'].forEach (key) ->
       FakeEditor::[key] = -> @getActiveTextEditor()[key](arguments...)
@@ -25,3 +25,7 @@ module.exports = ->
       @fakeEditor = new FakeEditor(minimap)
 
     getActiveEditor: -> @fakeEditor
+
+    handleSelection: ->
+      return unless atom.workspace.getActiveTextEditor()?
+      super
