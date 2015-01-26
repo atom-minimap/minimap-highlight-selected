@@ -1,3 +1,10 @@
+<a name="v3.1.1"></a>
+# v3.1.1 (2015-01-26)
+
+## :bug: Bug Fixes
+
+- Fix error raised when minimap is not toggled ([148f5732](https://github.com/abe33/minimap-highlight-selected/commit/148f5732bb5009e39508bd2ceb1fadb0e45af3a8), [#4](https://github.com/abe33/minimap-highlight-selected/issues/4))
+
 <a name="v3.1.0"></a>
 # v3.1.0 (2015-01-05)
 
