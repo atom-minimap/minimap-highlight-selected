@@ -1,5 +1,3 @@
-{View} = require 'atom'
-
 module.exports = ->
   highlightSelectedPackage = atom.packages.getLoadedPackage('highlight-selected')
 
