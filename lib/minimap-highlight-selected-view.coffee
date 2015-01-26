@@ -28,4 +28,5 @@ module.exports = ->
 
     handleSelection: ->
       return unless atom.workspace.getActiveTextEditor()?
+      return unless @fakeEditor.getActiveTextEditor()?
       super
