@@ -1,3 +1,10 @@
+<a name="v3.1.2"></a>
+# v3.1.2 (2015-01-26)
+
+## :bug: Bug Fixes
+
+- Fix deprecations ([4c903462](https://github.com/abe33/minimap-highlight-selected/commit/4c90346280e32065fbde0dd1291c7473b35e57e5))
+
 <a name="v3.1.1"></a>
 # v3.1.1 (2015-01-26)
 
