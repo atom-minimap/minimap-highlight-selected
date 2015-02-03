@@ -1,3 +1,13 @@
+<a name="v4.0.0"></a>
+# v4.0.0 (2015-02-03)
+
+This version enable exclusive support for Minimap v4.
+
+## :bug: Bug Fixes
+
+- Fix error raised on tab close ([cd7f93c3](https://github.com/abe33/minimap-highlight-selected/commit/cd7f93c3ff84ee78f38974402d7dea37ba477aed))
+- Fix broken plugin since highlight-selected update ([de7b38b2](https://github.com/abe33/minimap-highlight-selected/commit/de7b38b2be40172ff6c4f3cd62aa39a54b0b31e4), [#5](https://github.com/abe33/minimap-highlight-selected/issues/5))
+
 <a name="v3.1.2"></a>
 # v3.1.2 (2015-01-26)
 
