@@ -11,7 +11,7 @@ module.exports = ->
 
     getActiveTextEditor: -> @getActiveMinimap()?.getTextEditor()
 
-    ['markBufferRange', 'scanInBufferRange', 'getEofBufferPosition', 'getSelections', 'getLastSelection', 'bufferRangeForBufferRow', 'getTextInBufferRange'].forEach (key) ->
+    ['markBufferRange', 'scanInBufferRange', 'getEofBufferPosition', 'getSelections', 'getLastSelection', 'bufferRangeForBufferRow', 'getTextInBufferRange', 'onDidChangeSelectionRange'].forEach (key) ->
       FakeEditor::[key] = -> @getActiveTextEditor()[key](arguments...)
 
     ['decorateMarker'].forEach (key) ->
@@ -19,8 +19,8 @@ module.exports = ->
 
   class MinimapHighlightSelectedView extends HighlightedAreaView
     constructor: (minimap) ->
-      super
       @fakeEditor = new FakeEditor(minimap)
+      super
 
     getActiveEditor: -> @fakeEditor
 
