@@ -5,74 +5,74 @@ This version enable exclusive support for Minimap v4.
 
 ## :bug: Bug Fixes
 
-- Fix error raised on tab close ([cd7f93c3](https://github.com/abe33/minimap-highlight-selected/commit/cd7f93c3ff84ee78f38974402d7dea37ba477aed))
-- Fix broken plugin since highlight-selected update ([de7b38b2](https://github.com/abe33/minimap-highlight-selected/commit/de7b38b2be40172ff6c4f3cd62aa39a54b0b31e4), [#5](https://github.com/abe33/minimap-highlight-selected/issues/5))
+- Fix error raised on tab close ([cd7f93c3](https://github.com/atom-minimap/minimap-highlight-selected/commit/cd7f93c3ff84ee78f38974402d7dea37ba477aed))
+- Fix broken plugin since highlight-selected update ([de7b38b2](https://github.com/atom-minimap/minimap-highlight-selected/commit/de7b38b2be40172ff6c4f3cd62aa39a54b0b31e4), [#5](https://github.com/atom-minimap/minimap-highlight-selected/issues/5))
 
 <a name="v3.1.2"></a>
 # v3.1.2 (2015-01-26)
 
 ## :bug: Bug Fixes
 
-- Fix deprecations ([4c903462](https://github.com/abe33/minimap-highlight-selected/commit/4c90346280e32065fbde0dd1291c7473b35e57e5))
+- Fix deprecations ([4c903462](https://github.com/atom-minimap/minimap-highlight-selected/commit/4c90346280e32065fbde0dd1291c7473b35e57e5))
 
 <a name="v3.1.1"></a>
 # v3.1.1 (2015-01-26)
 
 ## :bug: Bug Fixes
 
-- Fix error raised when minimap is not toggled ([148f5732](https://github.com/abe33/minimap-highlight-selected/commit/148f5732bb5009e39508bd2ceb1fadb0e45af3a8), [#4](https://github.com/abe33/minimap-highlight-selected/issues/4))
+- Fix error raised when minimap is not toggled ([148f5732](https://github.com/atom-minimap/minimap-highlight-selected/commit/148f5732bb5009e39508bd2ceb1fadb0e45af3a8), [#4](https://github.com/atom-minimap/minimap-highlight-selected/issues/4))
 
 <a name="v3.1.0"></a>
 # v3.1.0 (2015-01-05)
 
 ## :sparkles: Features
 
-- Implement support for both minimap v3 and v4 API ([dc01e08d](https://github.com/abe33/minimap-highlight-selected/commit/dc01e08de819c184effc75df75827480229260bf))
+- Implement support for both minimap v3 and v4 API ([dc01e08d](https://github.com/atom-minimap/minimap-highlight-selected/commit/dc01e08de819c184effc75df75827480229260bf))
 
 ## :bug: Bug Fixes
 
-- Fix error raised when typing in a mini editor ([3d78a2f8](https://github.com/abe33/minimap-highlight-selected/commit/3d78a2f89d57ef29557b44bcc1608243a5133270))
+- Fix error raised when typing in a mini editor ([3d78a2f8](https://github.com/atom-minimap/minimap-highlight-selected/commit/3d78a2f89d57ef29557b44bcc1608243a5133270))
 
 <a name="v3.0.0"></a>
 # v3.0.0 (2014-09-19)
 
 ## :sparkles: Features
 
-- Add version test for minimap v3 ([49ed7f84](https://github.com/abe33/minimap-highlight-selected/commit/49ed7f84e1319bcfb9504fb9d63436bee0d7241b))
-- Implement support for new minimap decoration API ([a31a2d50](https://github.com/abe33/minimap-highlight-selected/commit/a31a2d509c5e2899a40fff8c8bffd6c50feebe2c))
+- Add version test for minimap v3 ([49ed7f84](https://github.com/atom-minimap/minimap-highlight-selected/commit/49ed7f84e1319bcfb9504fb9d63436bee0d7241b))
+- Implement support for new minimap decoration API ([a31a2d50](https://github.com/atom-minimap/minimap-highlight-selected/commit/a31a2d509c5e2899a40fff8c8bffd6c50feebe2c))
 
 ## :bug: Bug Fixes
 
-- Fix deprecated minimap methods calls ([d63a773d](https://github.com/abe33/minimap-highlight-selected/commit/d63a773d0de54809721bedc31be81c33a64ae831))
-- Fix plugin not destroying/recreating markers on activation ([96bc3af0](https://github.com/abe33/minimap-highlight-selected/commit/96bc3af0c20bebeef94eb708cb65fa00a0fc4666))
+- Fix deprecated minimap methods calls ([d63a773d](https://github.com/atom-minimap/minimap-highlight-selected/commit/d63a773d0de54809721bedc31be81c33a64ae831))
+- Fix plugin not destroying/recreating markers on activation ([96bc3af0](https://github.com/atom-minimap/minimap-highlight-selected/commit/96bc3af0c20bebeef94eb708cb65fa00a0fc4666))
 
 <a name="v1.0.2"></a>
 # v1.0.2 (2014-08-17)
 
 ## :bug: Bug Fixes
 
-- Fix broken plugin with highlight-selected@0.5.0 ([a96d2afb](https://github.com/abe33/minimap-highlight-selected/commit/a96d2afb3b82737be6d0edd8f56fe7b53ce5ee4f))
+- Fix broken plugin with highlight-selected@0.5.0 ([a96d2afb](https://github.com/atom-minimap/minimap-highlight-selected/commit/a96d2afb3b82737be6d0edd8f56fe7b53ce5ee4f))
 
 <a name="v1.0.1"></a>
 # v1.0.1 (2014-08-17)
 
 ## :bug: Bug Fixes
 
-- Fix toggling plugin doesn't remove or recreate views ([9a931710](https://github.com/abe33/minimap-highlight-selected/commit/9a931710b46842429785c604d8c03d2ea42ed36f))
+- Fix toggling plugin doesn't remove or recreate views ([9a931710](https://github.com/atom-minimap/minimap-highlight-selected/commit/9a931710b46842429785c604d8c03d2ea42ed36f))
 
 <a name="v1.0.0"></a>
 # v1.0.0 (2014-08-16)
 
 ## :sparkles: Features
 
-- Implement support for the minimap position API ([36debca3](https://github.com/abe33/minimap-highlight-selected/commit/36debca3cb5356d739d0b05165c183e5d9c1aa5a))
+- Implement support for the minimap position API ([36debca3](https://github.com/atom-minimap/minimap-highlight-selected/commit/36debca3cb5356d739d0b05165c183e5d9c1aa5a))
 
 <a name="v0.3.0"></a>
 # v0.3.0 (2014-07-10)
 
 ## :sparkles: Features
 
-- Implement using a syntax variable for highlights ([16af2f91](https://github.com/abe33/minimap-highlight-selected/commit/16af2f91373e30e35f1e7b77e2fd9ba2e424abb1), [#2](https://github.com/abe33/minimap-highlight-selected/issues/2))
+- Implement using a syntax variable for highlights ([16af2f91](https://github.com/atom-minimap/minimap-highlight-selected/commit/16af2f91373e30e35f1e7b77e2fd9ba2e424abb1), [#2](https://github.com/atom-minimap/minimap-highlight-selected/issues/2))
 
 
 <a name="v0.2.0"></a>
@@ -80,7 +80,7 @@ This version enable exclusive support for Minimap v4.
 
 ## :sparkles: Features
 
-- Add compatibility for upcoming react support in minimap ([76f683d9](https://github.com/abe33/minimap-highlight-selected/commit/76f683d98962dad1e0024de99c37c08cae654ccf))
+- Add compatibility for upcoming react support in minimap ([76f683d9](https://github.com/atom-minimap/minimap-highlight-selected/commit/76f683d98962dad1e0024de99c37c08cae654ccf))
 
 
 <a name="v0.1.1"></a>
@@ -88,7 +88,7 @@ This version enable exclusive support for Minimap v4.
 
 ## :bug: Bug Fixes
 
-- Fixes screenshot path ([7e43ad8c](https://github.com/abe33/minimap-highlight-selected/commit/7e43ad8ce217362b22043ecaf4767a0a8e47ea41))
+- Fixes screenshot path ([7e43ad8c](https://github.com/atom-minimap/minimap-highlight-selected/commit/7e43ad8ce217362b22043ecaf4767a0a8e47ea41))
 
 
 <a name="v0.1.0"></a>
@@ -96,4 +96,4 @@ This version enable exclusive support for Minimap v4.
 
 ## :sparkles: Features
 
-- Adds screenshots and documentation ([30c22042](https://github.com/abe33/minimap-highlight-selected/commit/30c220420fa7106fcd39750429b100b31e5e7147))
+- Adds screenshots and documentation ([30c22042](https://github.com/atom-minimap/minimap-highlight-selected/commit/30c220420fa7106fcd39750429b100b31e5e7147))

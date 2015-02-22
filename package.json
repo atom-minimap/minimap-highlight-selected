@@ -3,7 +3,7 @@
   "main": "./lib/minimap-highlight-selected",
   "version": "4.0.0",
   "description": "A minimap binding for the highlight-selected package",
-  "repository": "https://github.com/abe33/minimap-highlight-selected",
+  "repository": "https://github.com/atom-minimap/minimap-highlight-selected",
   "license": "MIT",
   "engines": {
     "atom": ">0.50.0"
