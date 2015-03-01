@@ -7,10 +7,9 @@ class MinimapHighlightSelected
     @subscriptions = new CompositeDisposable
 
   activate: (state) ->
-    requirePackages('minimap', 'highlight-selected')
-    .then ([@minimap, @highlightSelected]) =>
-      return @deactivate() unless @minimap.versionMatch('4.x')
 
+  consumeMinimapServiceV1: (@minimap) ->
+    requirePackages('highlight-selected').then ([@highlightSelected]) =>
       MinimapHighlightSelectedView = require('./minimap-highlight-selected-view')()
 
       @minimap.registerPlugin 'highlight-selected', this
@@ -23,6 +22,7 @@ class MinimapHighlightSelected
     @minimap = null
 
   isActive: -> @active
+
   activatePlugin: ->
     return if @active
 
