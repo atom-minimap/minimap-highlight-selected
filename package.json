@@ -1,7 +1,7 @@
 {
   "name": "minimap-highlight-selected",
   "main": "./lib/minimap-highlight-selected",
-  "version": "4.2.0",
+  "version": "4.2.1",
   "description": "A minimap binding for the highlight-selected package",
   "repository": "https://github.com/atom-minimap/minimap-highlight-selected",
   "license": "MIT",
