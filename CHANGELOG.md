@@ -1,3 +1,11 @@
+<a name="v4.2.1"></a>
+# v4.2.1 (2015-04-20)
+
+## :bug: Bug Fixes
+
+- Fix plugin broken by latest highlight-selected update ([e50a0638](https://github.com/atom-minimap/minimap-highlight-selected/commit/e50a063814321aa096dd9413dd2887255c9391e5), [#8](https://github.com/atom-minimap/minimap-highlight-selected/issues/8))
+
+
 <a name="v4.2.0"></a>
 # v4.2.0 (2015-03-01)
 
