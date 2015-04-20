@@ -11,7 +11,7 @@ module.exports = ->
 
     getActiveTextEditor: -> @getActiveMinimap()?.getTextEditor()
 
-    ['markBufferRange', 'scanInBufferRange', 'getEofBufferPosition', 'getSelections', 'getLastSelection', 'bufferRangeForBufferRow', 'getTextInBufferRange', 'onDidChangeSelectionRange'].forEach (key) ->
+    ['markBufferRange', 'scanInBufferRange', 'getEofBufferPosition', 'getSelections', 'getLastSelection', 'bufferRangeForBufferRow', 'getTextInBufferRange', 'onDidAddSelection', 'onDidChangeSelectionRange'].forEach (key) ->
       FakeEditor::[key] = -> @getActiveTextEditor()?[key](arguments...)
 
     ['decorateMarker'].forEach (key) ->
