@@ -1,3 +1,5 @@
+{CompositeDisposable} = require 'atom'
+
 module.exports = ->
   highlightSelectedPackage = atom.packages.getLoadedPackage('highlight-selected')
 
@@ -28,3 +30,15 @@ module.exports = ->
       return unless atom.workspace.getActiveTextEditor()?
       return unless @fakeEditor.getActiveTextEditor()?
       super
+
+    subscribeToActiveTextEditor: ->
+      @selectionSubscription?.dispose()
+      @selectionSubscription = new CompositeDisposable
+
+      if editor = @getActiveEditor()
+        @selectionSubscription.add editor.onDidAddSelection =>
+          @handleSelection()
+        @selectionSubscription.add editor.onDidChangeSelectionRange =>
+          @handleSelection()
+
+      @handleSelection()
