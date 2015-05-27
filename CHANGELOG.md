@@ -1,3 +1,11 @@
+<a name="v4.3.0"></a>
+# v4.3.0 (2015-05-27)
+
+## :sparkles: Features
+
+- Implement markers in selection with a different color ([305cf34a](https://github.com/atom-minimap/minimap-highlight-selected/commit/305cf34abad82eb192e9f5289853bee331482b85), [#10](https://github.com/atom-minimap/minimap-highlight-selected/issues/10))  <br>Only effective when `highlight-selected.hideHighlightOnSelectedWord`
+  setting is enabled.
+
 <a name="v4.2.3"></a>
 # v4.2.3 (2015-05-11)
 
