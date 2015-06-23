@@ -13,6 +13,11 @@
       "versions": {
         "1.0.0": "consumeMinimapServiceV1"
       }
+    },
+    "highlightSelected": {
+      "versions": {
+        "1.0.0": "consumeHighlightSelectedServiceV1"
+      }
     }
   },
   "dependencies": {

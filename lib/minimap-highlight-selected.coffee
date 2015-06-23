@@ -14,6 +14,10 @@ class MinimapHighlightSelected
 
       @minimap.registerPlugin 'highlight-selected', this
 
+  consumeHighlightSelectedServiceV1: (something) ->
+    requirePackages('highlight-selected').then ([@highlightSelected]) =>
+      @highlightSelectedService = @highlightSelected.provideHighlightSelectedV1()
+
   deactivate: ->
     @deactivatePlugin()
     @minimapPackage = null
@@ -44,13 +48,11 @@ class MinimapHighlightSelected
     return if @viewsCreated
 
     @viewsCreated = true
-    @view = new MinimapHighlightSelectedView(@minimap)
-    @view.handleSelection()
+    @view = new MinimapHighlightSelectedView(@minimap, @highlightSelectedService)
 
   destroyViews: =>
     return unless @viewsCreated
     @viewsCreated = false
     @view.removeMarkers()
-    @view.destroy()
 
 module.exports = new MinimapHighlightSelected
