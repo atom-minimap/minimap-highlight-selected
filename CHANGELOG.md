@@ -1,3 +1,10 @@
+<a name="v4.3.1"></a>
+# v4.3.1 (2015-09-22)
+
+## :arrow_up: Dependencies Update
+
+- Bump atom-utils version ([142405e5](https://github.com/atom-minimap/minimap-highlight-selected/commit/142405e52d18a608027d0d47078ae961b5e5dbd3), [#16](https://github.com/atom-minimap/minimap-highlight-selected/issues/16))
+
 <a name="v4.3.0"></a>
 # v4.3.0 (2015-05-27)
 
