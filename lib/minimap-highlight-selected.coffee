@@ -34,6 +34,7 @@ class MinimapHighlightSelected
   init: ->
     @decorations = []
     @highlightSelected.onDidAddMarker (marker) => @markerCreated(marker)
+    @highlightSelected.onDidRemoveAllMarkers => @markersDestroyed()
 
   dispose: ->
     @decorations.forEach (decoration) -> decoration.destroy()
@@ -46,6 +47,10 @@ class MinimapHighlightSelected
     decoration = activeMinimap.decorateMarker(marker,
       {type: 'highlight', class: @highlightSelected.makeClasses()})
     @decorations.push decoration
+
+  markersDestroyed: =>
+    @decorations.forEach (decoration) -> decoration.destroy()
+    @decorations = []
 
   deactivatePlugin: ->
     return unless @active
