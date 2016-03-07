@@ -73,6 +73,7 @@ module.exports = ->
           decoration = editor.decorateMarker(marker, {
             type: 'highlight'
             class: className
+            plugin: 'highlight-selected'
           })
           @views.push marker
 
