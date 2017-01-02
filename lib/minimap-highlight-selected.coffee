@@ -34,18 +34,21 @@ class MinimapHighlightSelected
   init: ->
     @decorations = []
     @highlightSelected.onDidAddMarker (marker) => @markerCreated(marker)
+    @highlightSelected.onDidAddSelectedMarker (marker) => @markerCreated(marker, true)
     @highlightSelected.onDidRemoveAllMarkers => @markersDestroyed()
 
   dispose: ->
     @decorations.forEach (decoration) -> decoration.destroy()
     @decorations = null
 
-  markerCreated: (marker) =>
+  markerCreated: (marker, selected = false) =>
     activeMinimap = @minimap.getActiveMinimap()
     return unless activeMinimap?
+    className  = 'highlight-selected'
+    className += ' selected' if selected
 
     decoration = activeMinimap.decorateMarker(marker,
-      {type: 'highlight', class: @highlightSelected.makeClasses()})
+      {type: 'highlight', class: className })
     @decorations.push decoration
 
   markersDestroyed: =>
