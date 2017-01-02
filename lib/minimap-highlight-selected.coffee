@@ -29,16 +29,17 @@ class MinimapHighlightSelected
     @subscriptions.add @minimap.onDidDeactivate @dispose
 
     @active = true
+
     @init() if @highlightSelected?
 
-  init: ->
+  init: =>
     @decorations = []
     @highlightSelected.onDidAddMarker (marker) => @markerCreated(marker)
     @highlightSelected.onDidAddSelectedMarker (marker) => @markerCreated(marker, true)
     @highlightSelected.onDidRemoveAllMarkers => @markersDestroyed()
 
-  dispose: ->
-    @decorations.forEach (decoration) -> decoration.destroy()
+  dispose: =>
+    @decorations?.forEach (decoration) -> decoration.destroy()
     @decorations = null
 
   markerCreated: (marker, selected = false) =>
