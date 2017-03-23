@@ -16,7 +16,7 @@
     },
     "highlightSelected": {
       "versions": {
-        "1.0.0": "consumeHighlightSelectedServiceV1"
+        "2.0.0": "consumeHighlightSelectedServiceV2"
       }
     }
   },
