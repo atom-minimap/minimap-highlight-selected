@@ -6,6 +6,8 @@ class MinimapHighlightSelected
     @subscriptions = new CompositeDisposable
 
   activate: (state) ->
+    unless atom.inSpecMode()
+      require('atom-package-deps').install 'minimap-highlight-selected', true
 
   consumeMinimapServiceV1: (@minimap) ->
     @minimap.registerPlugin 'highlight-selected', this

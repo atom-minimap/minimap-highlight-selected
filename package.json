@@ -23,6 +23,10 @@
   "dependencies": {
     "event-kit": ">= 0.7.2",
     "underscore-plus": "1.x",
-    "atom-utils": "0.0.1"
-  }
+    "atom-utils": "0.0.1",
+    "atom-package-deps": "^4.4.1"
+  },
+  "package-deps": [
+    "highlight-selected"
+  ]
 }
