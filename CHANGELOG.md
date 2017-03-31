@@ -1,3 +1,10 @@
+<a name="4.6.0"></a>
+# 4.6.0 (2017-01-12)
+
+## :sparkles: Features
+
+- Update to new highlight-selected API
+
 <a name="4.5.0"></a>
 # 4.5.0 (2017-01-12)
 
