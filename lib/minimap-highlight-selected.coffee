@@ -6,11 +6,13 @@ class MinimapHighlightSelected
     @subscriptions = new CompositeDisposable
 
   activate: (state) ->
+    unless atom.inSpecMode()
+      require('atom-package-deps').install 'minimap-highlight-selected', true
 
   consumeMinimapServiceV1: (@minimap) ->
     @minimap.registerPlugin 'highlight-selected', this
 
-  consumeHighlightSelectedServiceV1: (@highlightSelected) ->
+  consumeHighlightSelectedServiceV2: (@highlightSelected) ->
     @init() if @minimap? and @active?
 
   deactivate: ->
@@ -34,21 +36,21 @@ class MinimapHighlightSelected
 
   init: =>
     @decorations = []
-    @highlightSelected.onDidAddMarker (marker) => @markerCreated(marker)
-    @highlightSelected.onDidAddSelectedMarker (marker) => @markerCreated(marker, true)
+    @highlightSelected.onDidAddMarkerForEditor (options) => @markerCreated(options)
+    @highlightSelected.onDidAddSelectedMarkerForEditor (options) => @markerCreated(options, true)
     @highlightSelected.onDidRemoveAllMarkers => @markersDestroyed()
 
   dispose: =>
     @decorations?.forEach (decoration) -> decoration.destroy()
     @decorations = null
 
-  markerCreated: (marker, selected = false) =>
-    activeMinimap = @minimap.getActiveMinimap()
-    return unless activeMinimap?
+  markerCreated: (options, selected = false) =>
+    minimap = @minimap.minimapForEditor(options.editor)
+    return unless minimap?
     className  = 'highlight-selected'
     className += ' selected' if selected
 
-    decoration = activeMinimap.decorateMarker(marker,
+    decoration = minimap.decorateMarker(options.marker,
       {type: 'highlight', class: className })
     @decorations.push decoration
 
