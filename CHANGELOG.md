@@ -1,3 +1,10 @@
+<a name="4.6.1"></a>
+# 4.6.1 (2017-01-12)
+
+## :sparkles: Features
+
+- check for available decorators before disposing
+
 <a name="4.6.0"></a>
 # 4.6.0 (2017-01-12)
 
