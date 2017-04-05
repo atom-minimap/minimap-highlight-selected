@@ -55,7 +55,7 @@ class MinimapHighlightSelected
     @decorations.push decoration
 
   markersDestroyed: =>
-    @decorations.forEach (decoration) -> decoration.destroy()
+    @decorations?.forEach (decoration) -> decoration.destroy()
     @decorations = []
 
   deactivatePlugin: ->
