@@ -1,5 +1,7 @@
 # minimap-highlight-selected package
 
+[![Build Status](https://github.com/atom-minimap/minimap-highlight-selected/workflows/CI/badge.svg)](https://github.com/atom-minimap/minimap-highlight-selected/actions)
+
 A minimap binding for the [highlight-selected package](https://github.com/richrace/highlight-selected).
 
 ![Screenshot](https://github.com/atom-minimap/minimap-highlight-selected/blob/master/screenshot.png?raw=true)
