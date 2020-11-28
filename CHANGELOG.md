@@ -1,3 +1,11 @@
+## [4.6.2](https://github.com/atom-minimap/minimap-highlight-selected/compare/v4.6.1...v4.6.2) (2020-11-28)
+
+
+### Bug Fixes
+
+* add minimap as dependency ([c349d21](https://github.com/atom-minimap/minimap-highlight-selected/commit/c349d21968cee637efb33c5691184f1356ef8ba5))
+* decaffeinate ([0264d0d](https://github.com/atom-minimap/minimap-highlight-selected/commit/0264d0d5457faf7d9f0f2d16078943c545ed97cf))
+
 <a name="4.6.1"></a>
 # 4.6.1 (2017-01-12)
 
