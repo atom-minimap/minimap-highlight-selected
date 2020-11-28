@@ -6,7 +6,7 @@
   "repository": "https://github.com/atom-minimap/minimap-highlight-selected",
   "license": "MIT",
   "engines": {
-    "atom": ">0.50.0"
+    "atom": ">=1.20.0"
   },
   "consumedServices": {
     "minimap": {
@@ -20,13 +20,34 @@
       }
     }
   },
-  "dependencies": {
-    "event-kit": ">= 0.7.2",
-    "underscore-plus": "1.x",
-    "atom-utils": "0.0.1",
-    "atom-package-deps": "^4.4.1"
-  },
   "package-deps": [
-    "highlight-selected"
+    {
+      "name": "minimap"
+    },
+    {
+      "name": "highlight-selected"
+    }
+  ],
+  "scripts": {
+    "test": "atom --test spec",
+    "lint": "eslint ."
+  },
+  "atomTestRunner": "./spec/runner.js",
+  "dependencies": {
+    "atom-package-deps": "^7.0.2"
+  },
+  "devDependencies": {
+    "@semantic-release/apm-config": "^8.0.0",
+    "atom-jasmine3-test-runner": "^5.1.8",
+    "eslint": "^7.14.0",
+    "eslint-config-standard": "^16.0.2",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-react": "^7.21.5",
+    "semantic-release": "^17.3.0"
+  },
+  "activationHooks": [
+    "core:loaded-shell-environment"
   ]
 }
