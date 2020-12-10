@@ -1,3 +1,10 @@
+## [4.6.3](https://github.com/atom-minimap/minimap-highlight-selected/compare/v4.6.2...v4.6.3) (2020-12-10)
+
+
+### Bug Fixes
+
+* Optimizations ([#53](https://github.com/atom-minimap/minimap-highlight-selected/issues/53)) ([e76876f](https://github.com/atom-minimap/minimap-highlight-selected/commit/e76876f91b331a57464f9ea72ee82b000c632d6a))
+
 ## [4.6.2](https://github.com/atom-minimap/minimap-highlight-selected/compare/v4.6.1...v4.6.2) (2020-11-28)
 
 
