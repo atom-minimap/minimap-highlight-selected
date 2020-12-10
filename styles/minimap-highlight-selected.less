@@ -5,10 +5,14 @@
 @import "ui-variables";
 @import "syntax-variables";
 
+@contain_all: layout size paint style;
+
 .minimap .highlight-selected {
+  contain: @contain_all;
   background: @text-color-highlight;
 
   &.selected {
+    contain: @contain_all;
     background: fadeout(@text-color-highlight, 50%);
   }
 }
