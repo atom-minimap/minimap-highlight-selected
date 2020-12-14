@@ -1,3 +1,10 @@
+## [4.6.4](https://github.com/atom-minimap/minimap-highlight-selected/compare/v4.6.3...v4.6.4) (2020-12-14)
+
+
+### Bug Fixes
+
+* **deps:** bump atom-package-deps from 7.0.2 to 7.0.3 ([#56](https://github.com/atom-minimap/minimap-highlight-selected/issues/56)) ([ab4763c](https://github.com/atom-minimap/minimap-highlight-selected/commit/ab4763cf5ff65992febe8cbb8bd839d3bbabef91))
+
 ## [4.6.3](https://github.com/atom-minimap/minimap-highlight-selected/compare/v4.6.2...v4.6.3) (2020-12-10)
 
 
