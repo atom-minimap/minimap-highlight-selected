@@ -34,7 +34,7 @@
   },
   "atomTestRunner": "./spec/runner.js",
   "dependencies": {
-    "atom-package-deps": "^7.0.2"
+    "atom-package-deps": "^7.0.3"
   },
   "devDependencies": {
     "@semantic-release/apm-config": "^8.0.0",
